@@ -1,0 +1,257 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+ --luckyPoint:#1E1450;
+ --radicalRed:#FF2261;
+ --Scarlet:#FF3C14;
+ --governorBay:#3230BE;
+ --caribbeanGreen:#00E68C;
+ --Maverick:#F5F3F5;
+}
+
+@font-face {
+    font-family: 'DpFont';
+    src: url('../fonts/Pilat\ Demi.otf');
+}
+
+body{
+    font-family: DpFont;
+     background-color: var(--Maverick);
+     
+}
+
+
+
+main {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 87vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    /* background: var(--darkBlue); */
+  }
+  
+  .start {
+    background-color: var(--luckyPoint);
+  }
+  
+ .circle {
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    background:url('../images/venti-views-1cqIcrWFQBI-unsplash\ \(1\).jpg') no-repeat center;
+   background-size: cover;
+    /* background: #282828; */
+    clip-path: circle(78% at right -10%);
+    z-index:50;
+  }
+  .navbar-nav{
+    z-index: 100;
+  }
+ 
+.navbar-dark{
+    background-color: var(--luckyPoint) !important;
+}
+.nav-link{
+    letter-spacing: 3px;
+    
+}
+.someChecks{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.threeChecks{
+    padding-left: 50px;
+}
+
+.collectionStyle{
+    border: 2px solid  var(--luckyPoint);
+    background-color: #e5e5e5;
+    border-radius: 25px;
+    border-radius: 6px;
+    padding: 2rem;
+    margin-bottom: 5rem;
+   
+}
+input,select{
+    margin-bottom: 10px;
+}
+.logo{
+    
+width: 130px;
+height: 70px;
+}
+
+
+.start .text{
+    position: absolute;
+    left: 23%;
+    top: 40%;
+    color:#ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* font-weight: 900px; */
+    text-align: center;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    
+}
+.text h2{
+  font-size: 3em;
+  line-height: 1em;
+}
+
+ .text p{
+   padding-left:77px;
+  font-size: 1.1em;
+  line-height: 1em;
+   margin:20px 0px;
+   text-align: justify;
+   letter-spacing: 1px;
+}
+
+
+
+
+
+.nav li a.is-active{
+  color: var(--caribbeanGreen);
+  border-bottom: 4px solid var(--caribbeanGreen);
+}
+
+.nav .slide{
+  position: absolute;
+  display: inline-flex;
+  width:100px;
+  height:3px;
+  bottom:5px;
+  transition: 0.5s cubic-bezier(0.23,1,0.32,1.05);
+  z-index:2;
+  background-color:var(--caribbeanGreen);
+}
+
+  /*Start Dashboard page*/
+.home-stats .stat{
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 20px;
+  color: var(--Maverick);
+  border-radius: 10px;
+  position: relative;
+  height: 190px;
+}
+.home-stats .last{
+  align-items: center !important;
+}
+
+.home-stats .stat .infoo{
+  float: right;
+  color: #ffffff;
+}
+.home-stats .stat .info{
+  color: #ffffff;
+}
+.home-stats .stat a {
+  color:#ffffff;
+  text-decoration: none;
+}
+.home-stats .stat .icon{
+position: absolute;
+    left: 21px;
+    top: 66px;
+    font-size: 4rem;
+}
+
+.home-stats .stat img{
+  position: absolute;
+      left: 21px;
+      top: 42px;
+     height: 100px;
+  }
+
+.home-stats .stat span{
+  display:block;
+  font-size:60px;
+}
+.home-stats .stat strong{
+  
+  font-size:30px;
+}
+.latest{
+  margin-top: 40px;
+}
+.home-stats .totalTrucks{
+
+  background-color:var(--governorBay) ;
+}
+.home-stats .totalDelivered{
+  background-color:var(--luckyPoint) ;
+} 
+.home-stats .totalReceived{
+ 
+  background-color:var(--caribbeanGreen) ;
+}
+.home-stats .RE{
+  background-color:var(--radicalRed) ;
+}
+.home-stats .RM{
+  background-color:var(--radicalRed) ;
+}
+
+.home-stats .DI{
+  background-color:var(--Scarlet) ;
+}
+
+.home-stats .DM{
+  background-color:var(--Scarlet) ;
+}
+
+
+.bg-danger{
+  
+    position: relative;
+    bottom: 56px
+}
+
+
+.modal-content{
+  background-color:var(--luckyPoint);
+  color: var(--Maverick);
+}
+/* .modal-header{
+
+  color:var(--caribbeanGreen);
+} */
+.dropdown-menu{
+  background-color:var(--Maverick);
+  color: var(--luckyPoint);
+
+}
+.dropdown-item {
+  color: var(--governorBay);
+}
+
+.bg-danger {
+
+
+  background: transparent linear-gradient(270deg,#1e1343 0%,#261d5e 23%,#312a82 54%,#5154b6 100%)
+   0% 0% no-repeat padding-box;
+}
+
+.lastButtons{
+  width: 80%;
+  height: 3rem;
+  font-size: larger;
+ padding: 2%;
+}

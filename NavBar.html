@@ -1,0 +1,291 @@
+
+ <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        
+        <img  class="logo" src="images/Picture1.png" alt="">
+
+       
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link p-lg-3 active" aria-current="page" href="Dashboard.html">Dashboard</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link p-lg-3 active" aria-current="page" href="Container.html">Container</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3 active" aria-current="page" href="ReleasedCargo.html">Released Cargo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3 active" aria-current="page" href="Rail.html">Rail</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3 active" aria-current="page" href="Bulk.html">Bulk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3 active" aria-current="page" href="FreeWeight.html">Free Weight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3 active" aria-current="page" href="WeightAdjust.html">Weight Adjust</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link  p-lg-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Log Star
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Search.html">Search</a></li>
+              <li><a class="dropdown-item" href="CaptureWeight.html">Capture Weight</a></li>
+            
+           
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link  p-lg-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Changes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"data-bs-toggle="modal" data-bs-target="#exampleModal-2">Container Weight</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-1">Truck Weight</a></li>
+            
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-3">Change Iso</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-4">Update BL</a></li>
+            </ul>
+          </li>
+         
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!---------------------------------- Modals ------------------------------------------------ -->
+     
+<!-- modal to container  -->
+<div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="justify-content: center;">
+        <h5 class="modal-title" id="exampleModalLabel">Change Container Max Weight </h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="modal-Input" class="col-form-label"> Container Number</label>
+            <input type="text" class="form-control" id="modal-Input" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="modal-Input" class="col-form-label"> Max Weight</label>
+            <input type="text" class="form-control" id="modal-Input" required>
+          </div>
+
+          <div class="modal-footer" style="justify-content: center;">
+            <a type="button" class="btn btn-success" data-bs-dismiss="modal">
+              <i class="fa-solid fa-check"></i> Save</a>
+            <a type="button" class="btn btn-danger">
+              <i class="fa-solid fa-trash"></i> Exit</a>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- modal to Truck  -->
+<div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="justify-content: center;">
+        <h5 class="modal-title" id="exampleModalLabel">Change Truck Max Weight </h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="modal-Input1" class="col-form-label"> Truck License</label>
+            <input type="text" class="form-control" id="modal-Input1" name="firstName" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="dropdow2" class="form-label">Government</label>
+          <select class="form-select" aria-label="Default select example" id="dropdown2">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="modal-Input3" class="col-form-label">Max Weight</label>
+            <input type="number" class="form-control" id="modal-Input3"  required>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="dropdown4" class="form-label">Truck Type</label>
+            <select class="form-select" aria-label="Default select example" id="dropdown4">
+                <option selected>Select</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+          </div>
+
+          <div class="modal-footer" style="justify-content: center;">
+            <a type="button" class="btn btn-success" data-bs-dismiss="modal">
+              <i class="fa-solid fa-check"></i> Save</button>
+            <a type="button" class="btn btn-danger">
+              <i class="fa-solid fa-trash"></i> Exit</a>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- modal to ISO  -->
+<div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="justify-content: center;">
+        <h5 class="modal-title" id="exampleModalLabel">Change ISO </h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row">
+
+          <div class="col-md-6">
+            <label for="modal-Input1" class="col-form-label"> Container Number</label>
+            <input type="number" class="form-control" id="modal-Input1"  required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="modal-Input2" class="col-form-label"> Iso Code</label>
+            <input type="number" class="form-control" id="modal-Input2"  required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="modal-Input3" class="col-form-label"> Height</label>
+            <input type="number" class="form-control" id="modal-Input3"  required>
+          </div>
+          
+          <div class="col-md-6">
+            <label for="modal-Input4" class="col-form-label">Equse Gkey</label>
+            <input type="number" class="form-control" id="modal-Input4"  required>
+          </div>
+          <div class="col-md-6">
+            <label for="modal-Input5" class="col-form-label"> Size</label>
+            <input type="number" class="form-control" id="modal-Input5"  required>
+          </div>
+          <div class="col-md-6">
+            <label for="modal-Input6" class="col-form-label">Changer</label>
+            <input type="text" class="form-control" id="modal-Input6"  required>
+          </div>
+          <div class="col-md-6">
+            <label for="modal-Input7" class="col-form-label">Owner ID</label>
+            <input type="number" class="form-control" id="modal-Input7"  required>
+          </div>
+          
+          <div class="col-md-6">
+            <label for="dropdown8" class="form-label">Type</label>
+            <select class="form-select" aria-label="Default select example" id="dropdown8">
+                <option selected>Select</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+          </div>
+          <div class="modal-footer" style="justify-content: center;">
+            <a type="button" class="btn btn-success" data-bs-dismiss="modal">
+              <i class="fa-solid fa-check"></i> Save</a>
+            <a type="button" class="btn btn-danger">
+              <i class="fa-solid fa-trash"></i> Exit</a>
+          </div>
+
+        </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<!-- modal to Bill Of Lading  -->
+<div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="justify-content: center;">
+        <h5 class="modal-title" id="exampleModalLabel"> Bill Of Lading </h5>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div class="mb-3">
+            <label for="modal-Input1" class="col-form-label">Old B/L</label>
+            <input type="text" class="form-control" id="modal-Input1"  required>
+          </div>
+
+          <div class="mb-3">
+            <label for="modal-Input2" class="col-form-label">Old B/L</label>
+            <input type="text" class="form-control" id="modal-Input2"  required>
+          </div>
+
+          <div class="mb-3">
+            <label for="modal-Input3" class="col-form-label">From Date</label>
+            <input type="date" class="form-control" id="modal-Input3"  required>
+          </div>
+
+          <div class="mb-3">
+            <label for="modal-Input4" class="col-form-label">To Date</label>
+            <input type="number" class="form-control" id="modal-Input4" required>
+          </div>
+
+
+          <div class="modal-footer" style="justify-content: center;">
+            <a type="button" class="btn btn-success" data-bs-dismiss="modal">
+              <i class="fa-solid fa-check"></i> Update Bill Of Lading</a>
+            
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

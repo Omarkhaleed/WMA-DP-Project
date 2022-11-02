@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Home Page</title>
+
+  <!-- Bootstrap css file  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome css file -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- Css Style file  -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation Bar  -->
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+
+          <img class="logo" src="images/Picture1.png" alt="">
+
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active" aria-current="page" href="Dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active" aria-current="page" href="Dashboard.html">Container</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active" aria-current="page" href="ReleasedCargo.html">Released Cargo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active" aria-current="page" href="Rail.html">Rail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active" aria-current="page" href="Bulk.html">Bulk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active" aria-current="page" href="FreeWeight.html">Free Weight</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-lg-3 active" aria-current="page" href="WeightAdjust.html">Weight Adjust</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link  p-lg-3 dropdown-toggle" href="#" id="navbarDropdown" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Log Star
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Search</a></li>
+                <li><a class="dropdown-item" href="#">Capture Weight</a></li>
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link  p-lg-3 dropdown-toggle" href="#" id="navbarDropdown" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Changes
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Container Weight</a></li>
+                <li><a class="dropdown-item" href="#">Truck Weight</a></li>
+
+                <li><a class="dropdown-item" href="#">Change Iso</a></li>
+                <li><a class="dropdown-item" href="#">Update BL</a></li>
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+
+  <main>
+
+    <div class="container mt-5">
+      <form class="row g-3">
+        <div class="row" style="justify-content:space-between; padding:0 3rem;">
+          <div class="col-md-12 collectionStyle">
+
+            <span class="badge bg-danger">
+              <h3>Search</h3>
+            </span>
+            <div class="row">
+
+              <div class="col-md-3">
+                <label for="input1" class="form-label">ATL Number</label>
+                <input type="number" class="form-control" id="input1">
+              </div>
+
+              <div class="col-md-3 " style="padding-top:34px;">
+                <a href="#" type="button" class="btn btn-primary" style="width:100% ;">Search</a>
+              </div>
+
+              <div class="col-md-3">
+                <label for="input2" class="form-label">BAT Number</label>
+                <input type="number" class="form-control" id="input2">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input3" class="form-label">Trucker</label>
+                <input type="text" class="form-control" id="input3">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input4" class="form-label">Truck License</label>
+                <input type="text" class="form-control" id="input4">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input5" class="form-label">Government</label>
+                <input type="text" class="form-control" id="input5">
+              </div>
+
+
+
+              <div class="col-md-3">
+                <label for="input" class="form-label">Trailer License</label>
+                <input type="text" class="form-control" id="input">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input6" class="form-label">Government</label>
+                <input type="text" class="form-control" id="input6">
+              </div>
+
+
+              <div class="col-md-3">
+                <label for="dropdown7" class="form-label">Truck Type</label>
+                <select class="form-select" aria-label="Default select example" id="dropdown7">
+                  <option selected>Select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col-md-3">
+                <label for="input8" class="form-label">BL Number</label>
+                <input type="number" class="form-control" id="input8">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input9" class="form-label">Vessel</label>
+                <input type="text" class="form-control" id="input9">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input10" class="form-label">Declaration Number</label>
+                <input type="number" class="form-control" id="input10">
+
+              </div>
+
+
+
+              <div class="col-md-3">
+                <label for="input11" class="form-label">Tare Weight</label>
+                <input type="number" class="form-control" id="input11">
+
+              </div>
+
+
+              <div class="col-md-3">
+                <label for="input12" class="form-label">Actual Weight</label>
+                <input type="number" class="form-control" id="input12">
+              </div>
+
+              <div class="col-md-3 " style="padding-top:34px;">
+                <a href="#" type="button" class="btn btn-primary" style="width:100% ;">Recalculate</a>
+              </div>
+
+              <div class="col-md-3">
+                <label for="input13" class="form-label">In Date</label>
+                <input type="date" class="form-control" id="input13">
+              </div>
+              <div class="col-md-3">
+                <label for="input14" class="form-label">Out Date</label>
+                <input type="date" class="form-control" id="input14">
+              </div>
+              <div class="col-md-3">
+                <label for="input15" class="form-label">Transaction Type</label>
+                <input type="text" class="form-control" id="input15">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input16" class="form-label">Status</label>
+                <input type="text" class="form-control" id="input16">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input17" class="form-label">BL Category</label>
+                <input type="text" class="form-control" id="input17">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input18" class="form-label">Factory Weight</label>
+                <input type="number" class="form-control" id="input18">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input19" class="form-label">Weight Outside</label>
+                <input type="number" class="form-control" id="input19">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input20" class="form-label">Max Gross Weight</label>
+                <input type="number" class="form-control" id="input20">
+              </div>
+
+              <div class="col-md-3">
+                <label for="input21" class="form-label"> Full Weight </label>
+                <input type="number" class="form-control" id="input21">
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="row" style="text-align:center;">
+
+            <div class="col-md-4" >
+              <a  href="#" type="button" class="btn btn-success lastButtons" >
+                <i class="fa-solid fa-check"></i> Save</a>  
+            </div>
+            <div class="col-md-4" >
+              <a  href="#" type="button" class="btn btn-primary lastButtons"  >
+                <i class="fa-solid fa-trash"></i>Clear</a>
+            </div>
+            <div class="col-md-4" >
+              <a  href="#" type="button" class="btn btn-danger lastButtons"  >
+                <i class="fa-solid fa-right-from-bracket"></i> Exit</a>
+            </div>
+
+      </form>
+    </div>
+
+  </main>
+
+
+
+
+
+  <!-- Bootstrap java Script File -->
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome Js file -->
+  <script type="text/javascript" src="js/all.min.js"></script>
+
+
+
+</body>
+
+</html>

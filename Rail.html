@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rail Page</title>
+     
+    <!-- Bootstrap css file  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome css file -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Css Style file  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation Bar  -->
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            
+            <img  class="logo" src="images/Picture1.png" alt="">
+
+           
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link p-lg-3 active" aria-current="page" href="Dashboard.html">Dashboard</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link p-lg-3 active" aria-current="page" href="Container.html">Container</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3 active" aria-current="page" href="ReleasedCargo.html">Released Cargo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3 active" aria-current="page" href="Rail.html">Rail</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3 active" aria-current="page" href="Bulk.html">Bulk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3 active" aria-current="page" href="FreeWeight.html">Free Weight</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link p-lg-3 active" aria-current="page" href="WeightAdjust.html">Weight Adjust</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link  p-lg-3 dropdown-toggle" href="#" id="navbarDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Log Star
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Search.html">Search</a></li>
+                  <li><a class="dropdown-item" href="CaptureWeight.html">Capture Weight</a></li>
+                
+               
+                </ul>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link  p-lg-3 dropdown-toggle" href="#" id="navbarDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Changes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Container Weight</a></li>
+                  <li><a class="dropdown-item" href="#">Truck Weight</a></li>
+                
+                  <li><a class="dropdown-item" href="#">Change Iso</a></li>
+                  <li><a class="dropdown-item" href="#">Update BL</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+
+
+  </header>
+
+<main>
+
+  <div class="container mt-5">
+    <form class="row g-3">
+
+      <!-- Basic Information -->
+       <div class="row collectionStyle">
+        <span class="badge bg-danger"><h3>Basic Information </h3></span>
+        <div class=" col-md-3 form-check threeChecks">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Get Yard</label>
+          </div>
+          <div class="col-md-3 form-check threeChecks">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Second Weight</label>
+          </div>
+        
+          <div class="col-md-3 form-check threeChecks">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+            <label class="form-check-label" for="inlineCheckbox3">Free Weight</label>
+          </div>
+         
+         
+          <div class="col-md-2 form-check threeChecks">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+            <label class="form-check-label" for="inlineCheckbox4">2C</label>
+          </div>
+
+            <div class="col-md-3">
+                <label for="input5" class="form-label">Train ID</label>
+                <input type="text" class="form-control" id="input5">
+              </div>
+              <div class="col-md-3">
+                <label for="input6" class="form-label">State</label>
+                <input type="text" class="form-control" id="input6">
+              </div>
+              <div class="col-md-3">
+                <label for="input7" class="form-label">Type</label>
+                <input type="text" class="form-control" id="input7">
+              </div>
+              <div class="col-md-3">
+                <label for="input8" class="form-label">Date</label>
+                <input type="date" class="form-control" id="input8">
+              </div>
+
+              <div class="col-md-2">
+                <label for="input9" class="form-label">Truck Number</label>
+                <input type="text" class="form-control" id="input9">
+              </div>
+    
+              <div class="col-md-3">
+                <label for="dropdown10" class="form-label">Government</label>
+                <select class="form-select" aria-label="Default select example" id="dropdown10">
+                    <option selected>Select</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+    
+
+              <div class="col-md-2">
+                <label for="input11" class="form-label">Gate Count</label>
+                <input type="text" class="form-control" id="input11">
+              </div>
+              <div class="col-md-2">
+                <label for="input12" class="form-label">Trailer Number</label>
+                <input type="text" class="form-control" id="input12">
+              </div>
+    
+              <div class="col-md-3">
+                <label for="dropdown13" class="form-label">Government</label>
+                <select class="form-select" aria-label="Default select example" id="dropdown13">
+                    <option selected>Select</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+    
+    
+              <!-- First Container -->
+         
+         <div class="col-md-3">
+            <label for="input14" class="form-label">Full Weight</label>
+            <input type="text" class="form-control" id="input14">
+           
+          </div>
+    
+          <div class="col-md-3 " style="padding-top:34px;">
+            <a  href="#" type="button" class="btn btn-primary"  style="width:100% ;">Get</a>
+          </div>
+          
+    
+    
+          <div class="col-md-3">
+            <label for="input15" class="form-label">Full Weight</label>
+            <input type="text" class="form-control" id="input15">
+          </div>
+    
+          <div class="col-md-3" style="padding-top:34px;">
+           <a href="#" type="button"  class="btn btn-primary" style="width:100% ;">Get</a>
+        </div>
+    
+        </div>
+
+       <!-- Second Container -->
+         <div class="row" style="justify-content:space-between; padding:0 3rem;">
+
+         
+          <div class="col-md-5 collectionStyle">
+            <span class="badge bg-danger"><h3>First Container</h3></span>
+            <div class="row">
+
+              <div class="col-md-6">
+                <label for="input15" class="form-label">Number</label>
+                <input type="text" class="form-control" id="input15">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input16" class="form-label">Tare</label>
+                <input type="text" class="form-control" id="input16">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input16" class="form-label">Bill of Lading</label>
+                <input type="text" class="form-control" id="input16">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input17" class="form-label">Declaration Number</label>
+                <input type="text" class="form-control" id="input17">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input18" class="form-label">Seal</label>
+                <input type="text" class="form-control" id="input18">
+              </div>
+
+              
+              <div class="col-md-6">
+                <label for="input19" class="form-label">Expected Gross Wg</label>
+                <input type="text" class="form-control" id="input19">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input20" class="form-label">Actual Weight</label>
+                <input type="number" class="form-control" id="input20">
+              </div>
+
+              <div class=" col-md-6 form-check someChecks">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox21" >
+                <label class="form-check-label" for="inlineCheckbox21">Hazarid</label>
+              </div>
+
+            </div>
+          </div>
+
+          
+          <div class="col-md-5 collectionStyle">
+            <span class="badge bg-danger"><h3>Second Container</h3></span>
+            <div class="row">
+
+              <div class="col-md-6">
+                <label for="input22" class="form-label">Number</label>
+                <input type="text" class="form-control" id="input22">
+              </div>
+      
+              <div class="col-md-6">
+                <label for="input23" class="form-label">Tare</label>
+                <input type="text" class="form-control" id="input23">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input24" class="form-label">Bill of Lading</label>
+                <input type="text" class="form-control" id="input24">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input25" class="form-label">Declaration Number</label>
+                <input type="text" class="form-control" id="input25">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input26" class="form-label">Seal</label>
+                <input type="text" class="form-control" id="input26">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input27" class="form-label">Expected Gross Wg</label>
+                <input type="text" class="form-control" id="input27">
+              </div>
+
+              <div class="col-md-6">
+                <label for="input28" class="form-label">Actual Weight</label>
+                <input type="text" class="form-control" id="input28">
+              </div>
+
+              <div class=" col-md-6 form-check someChecks">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox29" value="option1">
+                <label class="form-check-label" for="inlineCheckbox29">Hazarid</label>
+              </div>
+      
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- General Information -->
+        <div class="row collectionStyle">
+          <span class="badge bg-danger"><h3>General Information</h3></span>
+          <div class="col-md-6">
+            <label for="dropdown30" class="form-label">Customer</label>
+            <select class="form-select" aria-label="Default select example" id="dropdown30">
+                <option selected>Select</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="input30" class="form-label">.</label>
+            <input type="text" class="form-control" id="input30">
+          </div>
+
+     
+       
+        <div class="col-md-6">
+          <label for="dropdown31" class="form-label">Cargo Type </label>
+          <select class="form-select" aria-label="Default select example" id="dropdown31">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+        </div>
+        
+        <div class="col-md-6">
+          <label for="dropdown32" class="form-label">.</label>
+          <select class="form-select" aria-label="Default select example" id="dropdown32">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="dropdown33" class="form-label">Copies</label>
+          <select class="form-select" aria-label="Default select example" id="dropdown33">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="dropdown34" class="form-label">Language</label>
+          <select class="form-select" aria-label="Default select example" id="dropdown34">
+              <option selected>Select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+        </div>
+
+      </div>
+
+      <div class="row" style="text-align:center;">
+
+        <div class="col-md-4" >
+          <a  href="#" type="button" class="btn btn-success lastButtons" >
+            <i class="fa-solid fa-check"></i> Save</a>  
+        </div>
+        <div class="col-md-4" >
+          <a  href="#" type="button" class="btn btn-primary lastButtons"  >
+            <i class="fa-solid fa-trash"></i>Clear</a>
+        </div>
+        <div class="col-md-4" >
+          <a  href="#" type="button" class="btn btn-danger lastButtons"  >
+            <i class="fa-solid fa-right-from-bracket"></i> Exit</a>
+        </div>
+        
+      </div>
+
+      </form>
+    </div>
+
+</main>
+
+
+
+
+
+   <!-- Bootstrap java Script File -->
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+   <!-- Font Awesome Js file -->
+  <script type="text/javascript" src="js/all.min.js"></script>
+
+  
+
+</body>
+</html>
