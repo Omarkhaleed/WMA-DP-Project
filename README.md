@@ -27,6 +27,10 @@
 ## Screenshots
 ![Example screenshot](./images/Screenshot.png)
 
+## Samples of Old version and New Version
+Old Version         |  New Version
+:-------------------------:|:-------------------------:
+![](./images/screen1.PNG)  |  ![](./images/screen2.png)
 
 ## Project Status
 Project is: _complete_ 
