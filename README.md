@@ -28,7 +28,8 @@
 ![Example screenshot](./images/Screenshot.png)
 
 ## Samples of Old version and New Version
-![alt-text-1](./images/screen1.PNG "Old Version") ![alt-text-2](./images/screen2.png "New Version")
+<img src="./images/screen1.PNG" width="425"/> <img src="./images/screen2.png" width="425"/> 
+
 
 ## Project Status
 Project is: _complete_ 
