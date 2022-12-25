@@ -25,7 +25,7 @@
 - Full inputs for each  page
 
 ## Screenshots
-![Example screenshot](./images/Screenshot 2022-12-25 200938.png)
+![Example screenshot](./images/Screenshot.png)
 
 
 ## Project Status
