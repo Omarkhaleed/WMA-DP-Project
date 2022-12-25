@@ -28,8 +28,6 @@
 ![Example screenshot](./images/Screenshot.png)
 
 ## Samples of Old version and New Version
-Old Version            New Version
-:-------------------------:|:-------------------------:
 <img src="./images/screen1.PNG" width="425"/> <img src="./images/screen2.png" width="425"/> 
 
 
